@@ -1,27 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useEffect, useState } from "react";
-import { getPosts } from "../api/posts";
+import { useSelector } from "react-redux";
+import { postsApi, useGetPostsQuery } from "../api/postsApi";
 
 export default function PostList({ setPostId }) {
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [posts, setPosts] = useState(null);
+  const {
+    data: posts,
+    isLoading,
+    error,
+    isFetching,
+    // isUninitialized,
+  } = useGetPostsQuery(undefined, {
+    // refetchOnMountOrArgChange: true,
+    // refetchOnFocus: true,
+    // refetchOnReconnect: true,
+    // pollingInterval: 3000,
+    // skip: true,
+  });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      try {
-        const data = await getPosts();
-        setPosts(data);
-        setError(null);
-      } catch (error) {
-        setError(error);
-        setPosts(null);
-      }
-      setIsLoading(false);
-    };
-    fetchData();
-  }, []);
+  // const [
+  //   trigger,
+  //   { data: posts, isLoading, error, isFetching, isUninitialized },
+  // ] = useLazyGetPostsQuery({});
+
+  // if (isUninitialized) {
+  //   return <button onClick={() => trigger()}>Fetch Posts</button>;
+  // }
 
   if (isLoading) {
     return (
@@ -41,7 +44,7 @@ export default function PostList({ setPostId }) {
 
   return (
     <section>
-      <h2>Posts:</h2>
+      <h2>Posts: {isFetching && <span className="spinner-border"></span>}</h2>
       <ul>
         {posts.map((post) => (
           <PostItem key={post.id} post={post} setPostId={setPostId} />
@@ -52,9 +55,16 @@ export default function PostList({ setPostId }) {
 }
 
 function PostItem({ post, setPostId }) {
+  const { isSuccess } = useSelector(
+    postsApi.endpoints.getPostById.select(post.id)
+  );
   return (
     <li>
-      <a onClick={() => setPostId(post.id)} href="#">
+      <a
+        className={isSuccess ? "link-success" : ""}
+        onClick={() => setPostId(post.id)}
+        href="#"
+      >
         {post.title}
       </a>
     </li>
