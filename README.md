@@ -1,20 +1,20 @@
-# React-Query Tutorial | Consultar APIs, caché y sincronización de forma simple y eficiente 🚀
+# Página Web Responsive - Desde Cero
 
 ## Tutoriales
-### Parte 1: Consultas
-[![RTK-Query - Tutorial | Redux Toolkit Query desde cero](https://img.youtube.com/vi/an2hyrNwCNE/0.jpg)](https://www.youtube.com/watch?v=an2hyrNwCNE "RTK-Query - Tutorial | Redux Toolkit Query desde cero")
+### Parte 1: Barra de navegación usando flexbox
+[![Barra de navegación usando flexbox](https://img.youtube.com/vi/ADbxRybIpH0/0.jpg)](https://www.youtube.com/watch?v=ADbxRybIpH0 "Barra de navegación usando flexbox")
 
-### Parte 2: Configuraciones
-[![RTK-Query - Tutorial | Parte 2: Configuraciones ⚙️](https://img.youtube.com/vi/kC_6YSi6XdE/0.jpg)](https://www.youtube.com/watch?v=kC_6YSi6XdE "RTK-Query - Tutorial | Parte 2: Configuraciones ⚙️")
+### Parte 2: Efectos de menú
+[![Efectos de menú](https://img.youtube.com/vi/qa4oWn3Zvpk/0.jpg)](https://www.youtube.com/watch?v=qa4oWn3Zvpk "Efectos de menú")
 
-### Parte 3: Mutaciones
-[![RTK-Query - Tutorial | Parte 3: Mutations 👾](https://img.youtube.com/vi/i3CerEkkAmU/0.jpg)](https://www.youtube.com/watch?v=i3CerEkkAmU "RTK-Query - Tutorial | Parte 3: Mutations 👾")
+### Parte 3: Perfil y Habilidades
+[![Perfil y Habilidades](https://img.youtube.com/vi/ZOC7BjMDfq0/0.jpg)](https://www.youtube.com/watch?v=ZOC7BjMDfq0 "Perfil y Habilidades")
 
-## Para iniciar la aplicación en modo desarrollo, usar los siguientes scripts
+### Parte 4: Experiencias
+[![Experiencias](https://img.youtube.com/vi/xXyvlgjpQJo/0.jpg)](https://www.youtube.com/watch?v=xXyvlgjpQJo "Experiencias")
 
-### `npm install`
-Instala las dependencias
-### `npm start`
-Inicia la aplicación en modo desarrollo en el puerto `3000`
-### `npm run server`
-Inicia el servidor de `json-server` en el puerto `3005` para probar el ejemplo
+### Parte 5: Conecta enlaces del menú con secciones de la página
+[![Conecta enlaces del menú con secciones de la página](https://img.youtube.com/vi/e14LvRFfjTg/0.jpg)](https://www.youtube.com/watch?v=e14LvRFfjTg "Conecta enlaces del menú con secciones de la página")
+
+### Parte 6: Sección de contacto con CSS Grid
+[![Sección de contacto con CSS Grid](https://img.youtube.com/vi/95IG9wyiyhQ/0.jpg)](https://www.youtube.com/watch?v=95IG9wyiyhQ "Sección de contacto con CSS Grid")
